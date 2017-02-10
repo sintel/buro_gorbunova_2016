@@ -1,0 +1,574 @@
+﻿/*-----------------------------------------
+------------------RESET--------------------
+-----------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+	font-family: 'PeaceSans';
+	src: url('../font/Peace_Sans_Webfont.eot');
+	src: local('☺'), url('../font/Peace_Sans_Webfont.woff') format('woff'), url('../font/Peace_Sans_Webfont.ttf') format('truetype'), url('../font/Peace_Sans_Webfont.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	background-color: #efeff0;
+}
+
+h1 {
+	font-family: 'PeaceSans', sans-serif;
+	font-size: 32px;
+}
+h2 {
+	font-family: 'PeaceSans', sans-serif;
+	font-size: 24px;
+}
+
+.wrapper {
+	background: #efeff0;
+	width: 100%;
+	min-width: 1040px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+}
+.header {
+	height: 680px;
+	position: relative;
+}
+.header .video-bg {
+	width: 100%;
+	height: 100%;
+	background: url(../images/video1.jpg) no-repeat;
+	background-size: cover;
+	z-index: 0;
+}
+.header .video-menu {
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	bottom: 55px;
+	text-align: center;
+}
+.header .video-menu ul {
+	width: 680px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	list-style: none;
+}
+.header .video-menu ul li {
+	display: inline-block;
+	margin: 0 10px;
+	text-transform: uppercase;
+}
+.header .video-menu ul li a {
+	padding: 15px 10px;
+	color: #81B1EF;
+	font-size: 14px;
+	text-decoration: none;
+	background: url(../images/menu-li.png) no-repeat;
+	background-size: contain;
+	background-position: 50% 75%;
+}
+.header .video-menu ul li a.active {
+	background: url(../images/menu-active.png) no-repeat;
+	background-size: contain;
+	background-position: 50% 50%;
+}
+.section-box.logo-c
+{
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	top: 10%;
+	left: 0;
+	right: 0;
+	z-index: 10;
+}
+
+.bg-white {
+	background-color: #fff;
+}
+.content {
+	margin-top: -43px;
+}
+.section-box {
+	position: relative;
+	width: 1030px;
+	margin: 0 auto 22px;
+}
+.teach {
+	text-align: center;
+	padding: 48px 0;
+}
+.teach p {
+	max-width: 450px;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 23px auto;
+}
+.teach .line {
+	width: 104px;
+	height: 3px;
+	margin: 34px auto 0;
+	background-color: #487c8b;
+}
+.teach .photo {
+	font-family: 'Ubuntu', sans-serif;
+	font-style: italic;
+	font-size: 16px;
+	line-height: 24px;
+	width: 450px;
+	margin: 0 auto;
+	position: relative;
+	text-align: left;
+}
+.teach .photo img {
+	vertical-align: middle;
+	display: inline-block;
+	margin-top: -15px;
+}
+.teach .photo div {
+	display: inline-block;
+	padding: 0 14px;
+	margin: 33px 0;
+}
+
+.section-box.print,
+.section-box.self,
+.section-box.events,
+.section-box.main {
+	display: table;
+}
+.section-box.self{
+	margin-top: 60px;
+}
+
+.section-box.main {
+	padding: 17px 45px 111px 45px;
+}
+.section-box.events {
+	margin-top: 60px;
+	margin-bottom:120px;
+}
+.section-box.print .text,
+.section-box.self .text,
+.section-box.events .text {
+	width: 35%;
+	display: table-cell;
+	vertical-align: top;
+	position: relative;
+}
+.section-box.main .text {
+	width: 43%;
+	display: table-cell;
+	vertical-align: top;
+	position: relative;
+}
+.section-box.print .media,
+.section-box.self .media,
+.section-box.events .media {
+	width: 65%;
+	display: table-cell;
+	position: relative;
+}
+.section-box.main .media {
+	width: 46%;
+	display: table-cell;
+	position: relative;	
+}
+.section-box.main .media img {
+	position: absolute;
+}
+.section-box.print .text h2,
+.section-box.print .media h2,
+.section-box.self .text h2,
+.section-box.events .text h2,
+.section-box.main .text h1 {
+	margin-bottom: 12px;
+}
+.section-box.print .text p,
+.section-box.print .media p,
+.section-box.self .text p,
+.section-box.events .text p,
+.section-box.main .text p {
+	line-height: 24px;
+}
+.section-box.main .text p {
+	margin-bottom: 4px;
+}
+.print .text {
+	padding: 96px 40px 0 37px;
+}
+.self .text {
+	padding: 32px 40px 0 25px;
+}
+.events .text {
+	padding: 32px 28px 0 37px;
+}
+.main .text {
+	padding: 32px 28px 0 53px;
+}
+.main .text h1 {
+	font-size: 34px;
+	line-height: 43px;
+}
+.section-box.print .media div {
+	position: absolute;
+	top: 90px;
+	right: 16%;
+	width: 230px;
+}
+.section-box.print .media i {
+	position: absolute;
+	left: 0;
+	bottom: 0px;
+	line-height: 24px;
+	font-style: italic;
+}
+.section-box.self .media i {
+	position: absolute;
+	left: 0;
+	bottom: -33px;
+	line-height: 24px;
+	font-style: italic;
+}
+.section-box.main .media i {
+	position: absolute;
+	width: 175px;
+	right: 10px;
+	bottom: -65px;
+	line-height: 24px;
+	font-style: italic;
+}
+.section-box.events .text i {
+	position: absolute;
+	right: 25px;
+	bottom: 15px;
+	line-height: 24px;
+	font-style: italic;
+	width: 200px;
+}
+ul.date-list {
+	margin-top: 42px;
+	margin-bottom: 50px;
+}
+
+ul.date-list li {
+	display: inline-block;
+	width: 30%;
+	padding: 0 1.5%;
+}
+ul.date-list li div {
+	display: table-cell;
+	padding: 30px 0;
+	line-height: 27px;
+	border-top: 1px solid #a7c4ca;
+	border-bottom: 1px solid #a7c4ca;	
+}
+ul.date-list li div.date {
+	vertical-align: middle;
+	text-align: center;
+	padding: 14px 28px 14px 0
+}
+ul.date-list li div.date h2 {
+	font-size: 24px;
+}
+ul.date-list li div.date h2 i {
+	font-size: 16px;
+}
+ul.date-list li div a {
+	display: block;
+	color: #3e8ff5;
+	font-size: 16px;
+	text-decoration: none;
+}
+ul.date-list li div small {
+	font-size: 12px;
+}
+.section-box.child
+{
+	display: table;
+	padding-top: 68px;
+}
+.section-box.child > div
+{
+	display: table-cell;
+	padding: 0 0 0 18px;
+	vertical-align: top;
+	position: relative;
+}
+.section-box.child h1 {
+	margin-bottom: 27px;
+}
+.section-box.child p {
+	line-height: 24px;
+	padding-bottom: 10px;
+}
+.section-box.child i.one {
+	position: absolute;
+	width: 200px;
+	left: 21px;
+	bottom: 114px;
+	line-height: 24px;
+	font-style: italic;
+}
+.section-box.child img.img-2 {
+	margin-top: 39px;
+}
+.section-box.child i.two {
+	position: absolute;
+	left: 21px;
+	bottom: -34px;
+	line-height: 24px;
+	font-style: italic;
+}
+.section-box.child i.three {
+	position: absolute;
+	left: 21px;
+	bottom: -34px;
+	line-height: 24px;
+	font-style: italic;
+}
+.section-box.child > div.vbottom {
+	vertical-align: bottom;
+}
+.section-box.ability {
+	display: table;
+	padding-top: 100px;
+}
+.section-box.ability .media {
+	width: 65%;
+	display: table-cell;
+	position: relative;
+}
+.section-box.ability .text {
+	width: 43%;
+	display: table-cell;
+	vertical-align: top;
+	position: relative;
+	padding-left: 12px;
+}
+.section-box.ability .text h1 {
+	margin-bottom: 30px;
+}
+.section-box.ability .text p {
+	line-height: 24px;
+	max-width: 380px;
+	padding-bottom: 10px;
+}
+.section-box.ability .text img {
+	margin-top: 40px;
+}
+.section-box.ability .media img {
+	position: absolute;
+	left: -70px;
+	top: -30px;
+	z-index: -1;
+}
+.section-box.ability .text i {
+	position: absolute;
+	left: 21px;
+	bottom: -34px;
+	line-height: 24px;
+	font-style: italic;
+}
+
+.section-box.events .media i {
+	position: absolute;
+	left: 21px;
+	bottom: -55px;
+	line-height: 24px;
+	font-style: italic;
+	width:60%;
+}
+
+.section-box.ability .media i {
+	position: absolute;
+	left: 210px;
+	bottom: -34px;
+	line-height: 24px;
+	font-style: italic;
+}
+.section-box.m-video
+{
+	padding: 20px;
+	height: 390px;
+	margin-bottom: 0;
+}
+.section-box.m-video.mm {
+	margin-top: 123px;
+}
+.section-box.m-video .text {
+	padding: 20px 38px;
+	width: 425px;
+	height: 345px;
+	background-color: #fff;
+	z-index: 10000;
+}
+.section-box.m-video .text h2 {
+	margin-bottom: 20px;
+}
+.section-box.m-video .text p {
+	line-height: 24px;
+	max-width: 380px;
+	padding-bottom: 10px;
+}
+.section-box.m-video.mm .text {
+	top: 20px;
+	left: 38px;
+	position: absolute;
+}
+.section-box.m-video.nm .text {
+	top: 20px;
+	right: 38px;
+	position: absolute;
+}
+.section-box.m-video.mm {
+	background-image: url(../images/img-mm-1.jpg);
+	background-size: cover;
+}
+.section-box.m-video.nm {
+	background-image: url(../images/img-mm-2.jpg);
+	background-size: cover;
+	margin-top: 60px;
+}
+.section-box.hermes {
+	padding: 20px;
+	margin-top: 60px;
+}
+.section-box.hermes .media {
+	width: 400px;
+}
+.section-box.hermes {
+	display: table;
+}
+.section-box.hermes .media {
+	width: 60%;
+	display: table-cell;
+	position: relative;
+}
+.section-box.hermes .text {
+	width: 40%;
+	display: table-cell;
+	vertical-align: top;
+	position: relative;
+	padding-left: 12px;
+}
+.section-box.hermes .text h1 {
+	margin-bottom: 30px;
+}
+
+.section-box.hermes-2 {
+	padding: 35px;
+	height: 425px;
+	margin-top: 60px;
+	background-color: #fff;
+	overflow: hidden;
+}
+.section-box.hermes-2 .media {
+	width: 30%;
+	display: table-cell;
+	position: relative;
+}
+.section-box.hermes-2 .text {
+	width: 70%;
+	display: table-cell;
+	vertical-align: top;
+	position: relative;
+	padding-left: 12px;
+}
+.section-box.hermes-2 .text h1 {
+	margin-bottom: 40px;
+}
+.section-box.hermes .text p {
+	line-height: 24px;
+	padding-bottom: 10px;
+}
+.section-box.hermes .text p a {
+	color: #3e8ff5;
+}
+.section-box.hermes-2 .text p {
+	line-height: 24px;
+	padding-bottom: 10px;
+	width: 75%;
+}
+.section-box.hermes-2 .text p b {
+	font-weight: bold;
+}
+.section-box.hermes-2 .text p a {
+	color: #3e8ff5;
+}
+.section-box.hermes-2 .media img {
+	display: block;
+	margin-top: 70px;
+}
+.section-box.hermes-2 .text img {
+	position: absolute;
+	bottom: 26px;
+	right: 35px;
+}
+.section-box .date-list.no-border li {
+	width: 33%;
+	padding: 0;
+	vertical-align: top;
+}
+.section-box .date-list.no-border li div {
+	display: block;
+	border: none;
+	width: 100%;
+	padding-left: 10px;
+}
+.section-box .date-list.no-border li div a {
+	display: inline-block;
+	text-decoration: underline;
+}
